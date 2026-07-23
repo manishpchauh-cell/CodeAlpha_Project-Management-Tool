@@ -1,1 +1,191 @@
+.dashboard-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
 
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h2 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.project-form {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-form input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.project-form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-form button:hover {
+  background-color: #2980b9;
+}
+
+.project-list {
+  margin-top: 30px;
+}
+
+.project-item {
+  background-color: #f9f9f9;
+  border-left: 5px solid #3498db;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-item-title {
+  font-size: 18px;
+  color: #2c3e50;
+  flex: 1;
+}
+
+.project-item-actions button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #f39c12;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #d68910;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.08);
+  padding: 22px 24px 18px 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow 0.2s;
+}
+.project-card:hover {
+  box-shadow: 0 8px 32px rgba(52, 152, 219, 0.18);
+}
+.project-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.project-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-decoration: none;
+}
+.project-card-actions button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.98rem;
+}
+.project-card-desc {
+  color: #555;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+.project-card-members {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.project-member-avatar {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #7f53ac 0%, #647dee 100%);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 1px 4px rgba(100, 125, 222, 0.10);
+}
+.project-card-stats {
+  display: flex;
+  gap: 18px;
+  font-size: 0.98rem;
+  margin-bottom: 4px;
+}
+.project-card-progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #eaf1fb;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.project-card-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  border-radius: 8px;
+  transition: width 0.4s;
+}
+.project-card-progress-label {
+  font-size: 0.97rem;
+  color: #3498db;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
